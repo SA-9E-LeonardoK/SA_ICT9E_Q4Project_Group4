@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DLSU Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="classes-style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <img
+        class="logo-img"
+        src="https://upload.wikimedia.org/wikipedia/en/c/c2/De_La_Salle_University_Seal.svg"
+        alt="DLSU Seal"
+      />
+      <div class="logo-text">
+        <span class="logo-title">De La Salle University Manila</span>
+        <span class="logo-badge">Student Portal</span>
+      </div>
+    </div>
+    <nav>
+      <a href="classes.html" class="nav-item active" data-page="classes">Classes</a>
+      <a href="dashboard.html" class="nav-item" data-page="dashboard">Dashboard</a>
+      <a href="tasks.html" class="nav-item" data-page="tasks">Tasks</a>
+      <a href="profile.html" class="nav-item" data-page="profile">Profile</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+     <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span class="arrow">&#8250;</span>
+        <span class="topbar-title">Classes</span>
+      </div>
+      <div class="topbar-right" id="hamburger">&#9776;
+        <div class="hamburger-dropdown" id="hamburger-dropdown">
+          <a href="index.html" class="dropdown-item">⬅ Logout</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CLASSES GRID -->
+    <div class="classes-grid">
+
+      <!-- English -->
+      <div class="class-card">
+        <div class="logo-box dark">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxaHjrwZ9i40MVBL3SM_Tr4ZKLhlIHhH5Y0Q&s" alt="English Dept">
+        </div>
+        <div class="card-info">
+          <div class="card-subject">English</div>
+          <div class="card-divider"></div>
+          <div class="card-teacher">Ms. Vivien Inigo</div>
+        </div>
+      </div>
+
+      <!-- Mathematics -->
+      <div class="class-card">
+        <div class="logo-box light">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3He-BX6a0SRhqDWc5teDsw_SNVsPJjPoy9Q&s" alt="Math Dept">
+        </div>
+        <div class="card-info">
+          <div class="card-subject">Mathematics</div>
+          <div class="card-divider"></div>
+          <div class="card-teacher">Ms. Exzequel Lim</div>
+        </div>
+      </div>
+
+      <!-- Filipino -->
+      <div class="class-card">
+        <div class="logo-box light">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrmRLRo0TBPsPW59dvs8Z5Kz-nIduyx343aw&s" alt="Filipino Dept">
+        </div>
+        <div class="card-info">
+          <div class="card-subject">Filipino</div>
+          <div class="card-divider"></div>
+          <div class="card-teacher">Ms. Crystal Llamado</div>
+        </div>
+      </div>
+
+      <!-- Social Science -->
+      <div class="class-card">
+        <div class="logo-box dark">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9B7onxVZcEOGW0XgL2c_ZisB1ZruX5Vw2hQ&s" alt="SS Dept">
+        </div>
+        <div class="card-info">
+          <div class="card-subject">Social Science</div>
+          <div class="card-divider"></div>
+          <div class="card-teacher">Mr. Jarod Penaflor</div>
+        </div>
+      </div>
+
+      <!-- Philosophy -->
+      <div class="class-card">
+        <div class="logo-box dark">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjqAZNLVfy2Bvq2zHKMDU7SPvpdwCH5-hNw&s" alt="PHILO Dept">
+        </div>
+        <div class="card-info">
+          <div class="card-subject">Philosophy</div>
+          <div class="card-divider"></div>
+          <div class="card-teacher">Mr. Rendell Marion Pena</div>
+        </div>
+      </div>
+
+      <!-- Multimedia Arts -->
+      <div class="class-card">
+        <div class="logo-box light">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR804ZFS_KoFfIJ5M5ldiWIbi_vfPWsSdsAdg&s" alt="Liberal Arts">
+        </div>
+        <div class="card-info">
+          <div class="card-subject">Multimedia Arts</div>
+          <div class="card-divider"></div>
+          <div class="card-teacher">Ms. Hariette Mae Onofre</div>
+        </div>
+      </div>
+
+  <!-- Footer -->
+  <div class="footer-bar">
+    Alshamsi, Blas, Barretto, Leonardo, Pascua | 9-Emerald 2025-2026
+  </div>
+
+    </div>
+  </main>
+
+  <script src="classes-proj.js"></script>
+</body>
+</html>

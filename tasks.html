@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DLSU Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tasks-style.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR / NAVBAR (exact same as dashboard, classes) -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <img
+        class="logo-img"
+        src="https://upload.wikimedia.org/wikipedia/en/c/c2/De_La_Salle_University_Seal.svg"
+        alt="DLSU Seal"
+      />
+      <div class="logo-text">
+        <span class="logo-title">De La Salle University Manila</span>
+        <span class="logo-badge">Student Portal</span>
+      </div>
+    </div>
+    <nav>
+      <a href="classes.html" class="nav-item"        data-page="classes">Classes</a>
+      <a href="dashboard.html"   class="nav-item"        data-page="dashboard">Dashboard</a>
+      <a href="tasks.html"   class="nav-item active" data-page="tasks">Tasks</a>
+      <a href="profile.html"            class="nav-item"        data-page="profile">Profile</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="arrow">&#8250;</span>
+    <span class="topbar-title">Tasks</span>
+  </div>
+  <div class="topbar-right" id="hamburger">&#9776;
+    <div class="hamburger-dropdown" id="hamburger-dropdown">
+      <a href="index.html" class="dropdown-item">⬅ Logout</a>
+    </div>
+  </div>
+</div>
+
+    <!-- ADD TASK FORM -->
+    <div class="add-task-card">
+      <h5 class="add-task-title">Add New Task</h5>
+      <div class="add-task-row">
+        <input type="text"  id="taskName"   class="task-input"  placeholder="Task name" />
+        <input type="date"  id="taskDue"    class="task-input"  />
+        <select             id="taskStatus" class="task-select">
+          <option value="notStarted">Not Started</option>
+          <option value="inProgress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+        <button id="addTaskBtn" class="add-btn">Add Task</button>
+      </div>
+    </div>
+
+    <!-- KANBAN COLUMNS -->
+    <div class="tasks-body">
+
+      <div class="task-col">
+        <div class="task-col-header">Not Started</div>
+        <div id="notStartedList" class="task-list"></div>
+      </div>
+
+      <div class="task-col">
+        <div class="task-col-header">In Progress</div>
+        <div id="inProgressList" class="task-list"></div>
+      </div>
+
+      <div class="task-col">
+        <div class="task-col-header">Done</div>
+        <div id="doneList" class="task-list"></div>
+      </div>
+
+  <!-- Footer -->
+  <div class="footer-bar">
+    Alshamsi, Blas, Barretto, Leonardo, Pascua | 9-Emerald 2025-2026
+  </div>
+
+    </div>
+  </main>
+
+  <script src="tasks-proj.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DLSU SHS Student Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="loginstyle.css"/>
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="login-page" class="page active">
+    <div class="portal-card">
+
+      <div class="left-panel">
+        <h1>Login</h1>
+        <p class="subtitle">Enter your details here</p>
+
+        <div class="input-group">
+          <input type="text"     id="email-input"    placeholder="Student Email..." autocomplete="username"/>
+          <input type="password" id="password-input" placeholder="Password..."         autocomplete="current-password"/>
+        </div>
+
+        <button class="btn-login" onclick="handleLogin()">Login</button>
+        <button class="forgot-link" onclick="openModal('forgot-modal')">Forgot password?</button>
+      </div>
+
+      <div class="right-panel">
+        <img class="bg-img"
+             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/St._La_Salle_Hall_Facade_June_2025.jpg"
+             alt="DLSU Campus"/>
+        <div class="overlay"></div>
+        <div class="right-content">
+          <div class="welcome-text">
+            Welcome to the DLSU SHS Student Portal!
+          </div>
+          <div class="seal-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/De_La_Salle_University_Seal.svg"
+                 alt="De La Salle University Seal"
+                 style="width:100%;height:100%;object-fit:contain;"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Dashboard Page -->
+  <div id="dashboard-page" class="page">
+    <div class="dashboard-card">
+
+      <div class="dash-header">
+        <div class="seal-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/De_La_Salle_University_Seal.svg"
+               alt="Seal" style="width:100%;height:100%;object-fit:contain;"/>
+        </div>
+        <div class="dash-header-text">
+          <h2>DLSU SHS Student Portal</h2>
+          <p>Senior High School — Academic Dashboard</p>
+        </div>
+      </div>
+
+      <div class="dash-body">
+        <div class="dash-welcome" id="dash-welcome-name">Welcome back!</div>
+        <div class="dash-sub">Here's your portal overview for this term.</div>
+
+            <div class="dash-tile" onclick="window.location.href='classes.html'">
+              <h3>Classes</h3>
+              <p>View your subjects</p>
+            </div>
+
+            <div class="dash-tile" onclick="window.location.href='dashboard.html'">
+              <h3>Dashboard</h3>
+              <p>Check out your class schedule</p>
+            </div>
+
+            <div class="dash-tile" onclick="window.location.href='tasks.html'">
+              <h3>Tasks</h3>
+              <p>Accomplish and view your tasks</p>
+            </div>
+
+            <div class="dash-tile" onclick="window.location.href='profile.html'">
+              <h3>Profile</h3>
+              <p>Manage your account</p>
+</div>
+
+        <button class="dash-logout" onclick="handleLogout()">⬅ Log Out</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Wrong Credentials -->
+  <div id="error-modal" class="modal-backdrop">
+    <div class="modal">
+      <h2>Incorrect Credentials</h2>
+      <p>The Student ID/Email or password you entered is incorrect.<br>Please double-check and try again.</p>
+      <button class="modal-close" onclick="closeModal('error-modal')">Try Again</button>
+    </div>
+  </div>
+
+  <!-- Forgot Password Modal -->
+  <div id="forgot-modal" class="modal-backdrop">
+    <div class="modal">
+      <h2>Forgot Your Password?</h2>
+      <p>
+        No worries! Reach out to the SHS Front Office and they'll help you reset it.<br><br>
+         <a href="mailto:shs.helpdesk@dlsu.edu.ph">shs.helpdesk@dlsu.edu.ph</a><br><br>
+        Or contact the main DLSU helpdesk:<br>
+         <a href="mailto:helpdesk@dlsu.edu.ph">helpdesk@dlsu.edu.ph</a><br><br>
+        Include your <strong>Student Email</strong> and full name so they can verify your identity and reset your password.
+      </p>
+      <button class="modal-close" onclick="closeModal('forgot-modal')">Got it</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-bar">
+    Alshamsi, Blas, Barretto, Leonardo, Pascua | 9-Emerald 2025-2026
+  </div>
+
+  <script src="login-proj.js"></script>
+</body>
+</html>

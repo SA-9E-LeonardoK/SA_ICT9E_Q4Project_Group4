@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DLSU Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboardstyle.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <img
+        class="logo-img"
+        src="https://upload.wikimedia.org/wikipedia/en/c/c2/De_La_Salle_University_Seal.svg"
+        alt="DLSU Seal"
+      />
+      <div class="logo-text">
+        <span class="logo-title">De La Salle University Manila</span>
+        <span class="logo-badge">Student Portal</span>
+      </div>
+    </div>
+    <nav>
+      <a href="classes.html" class="nav-item" data-page="classes">Classes</a>
+      <a href="dashboard.html" class="nav-item active" data-page="dashboard">Dashboard</a>
+      <a href="tasks.html" class="nav-item" data-page="tasks">Tasks</a>
+      <a href="profile.html" class="nav-item" data-page="profile">Profile</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span class="arrow">&#8250;</span>
+        <span class="topbar-title">Dashboard</span>
+      </div>
+      <div class="topbar-right" id="hamburger">&#9776;
+        <div class="hamburger-dropdown" id="hamburger-dropdown">
+          <a href="index.html" class="dropdown-item">⬅ Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD BODY -->
+    <div class="dashboard-body">
+
+      <!-- LEFT: Semester Overview Card -->
+      <div class="card semester-card">
+        <h2 class="semester-title">3<sup>rd</sup> Semester Overview</h2>
+        <hr class="divider" />
+        <p class="info-line"><span class="label">Status:</span> Ongoing</p>
+        <p class="info-line"><span class="label">Progress:</span> Week 6 of 10</p>
+        <p class="info-line"><span class="label">Upcoming:</span> Midterm Assessments</p>
+        <hr class="divider" />
+        <p class="subjects-title">Current Subjects:</p>
+        <ul class="subjects-list">
+          <li>English</li>
+          <li>Mathematics</li>
+          <li>Filipino</li>
+          <li>Social Sciences</li>
+          <li>Philosophy</li>
+          <li>Multimedia Arts</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: Calendar + Upcoming -->
+      <div class="right-col">
+        <div class="card calendar-card">
+          <div class="cal-header">
+            <button class="cal-nav" id="cal-prev">&#8249;</button>
+            <span class="cal-month-label" id="cal-month-label"></span>
+            <button class="cal-nav" id="cal-next">&#8250;</button>
+          </div>
+          <div class="cal-grid">
+            <div class="cal-day-name">Su</div>
+            <div class="cal-day-name">Mo</div>
+            <div class="cal-day-name">Tu</div>
+            <div class="cal-day-name">We</div>
+            <div class="cal-day-name">Th</div>
+            <div class="cal-day-name">Fr</div>
+            <div class="cal-day-name">Sa</div>
+          </div>
+          <div class="cal-grid" id="cal-days"></div>
+        </div>
+
+        <div class="upcoming-label">Upcoming</div>
+
+        <div class="upcoming-list">
+          <div class="upcoming-item">
+            <p class="event-title"><strong>Philosophy</strong> Essay Writing Test</p>
+            <p class="event-date">May 8, 2026</p>
+          </div>
+          <div class="upcoming-item">
+            <p class="event-title"><strong>Mathematics</strong> Long Quiz</p>
+            <p class="event-date">May 8, 2026</p>
+          </div>
+          <div class="upcoming-item">
+            <p class="event-title"><strong>Multimedia Arts</strong> Practical Exam</p>
+            <p class="event-date">May 11, 2026</p>
+          </div>
+        </div>
+      </div>
+
+  <!-- Footer -->
+  <div class="footer-bar">
+    Alshamsi, Blas, Barretto, Leonardo, Pascua | 9-Emerald 2025-2026
+  </div>
+  
+    </div>
+  </main>
+
+  <script src="dashboardproj.js"></script>
+</body>
+</html>
